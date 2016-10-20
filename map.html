@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=320, initial-scale=1">
+
+    <link  href="css/redpinstyle.css" rel="stylesheet" type="text/css"/>
+	<link  href="css/redpin_menu.css" rel="stylesheet" type="text/css"/>
+	<link href="css/redpin_map.css" rel="stylesheet"
+type="text/css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	</head>
+
+
+
+    <body>
+        <div class="container">
+
+            <div id="addPin">
+							<div id="closePinDiv"><button id="closePinBut"> X</button></div>
+					<input type="text" placeholder="Search" color="black" id="searchTextField"/>
+							<input type="text" id="comment" rows="4" placeholder="Comment.."/>
+							<button id="addPinBut"> Add</button>
+					</div>
+
+
+            <div id="pinMap"></div>
+            <div class="topBar"><a href="menu.html" data-transition="slide" data-direction="reverse"><img class="menuBut"src="images/menu.png"/></a><img class="topbarIcon" src="images/icons/trips.png"/>
+							<h2 class="topbarText">Maps</h2>
+						</div>
+		<div>
+	 <img class="pinButton" id="mapPinButton" src="images/pinBut.png"/>
+	</div>
+						</div>
+
+
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSWFQ27h4h_YJw9ghePQdI8wBSw9_aR-M&libraries=places&callback=initialize" sync defer></script>
+		<script src="js/map.js"></script>
+	<script src="js/redpinFB.js"></script>
+    <script src="js/RedPin_menuJS.js"></script>
+		
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    </body>
+</html>
+<!---http://www.w3schools.com/jquerymobile/jquerymobile_transitions.asp--->

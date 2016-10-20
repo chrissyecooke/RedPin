@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=320, initial-scale=1">
+    <link  href="css/redpinstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/redpin_trips.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+        <div class="halfGradient">
+             <div class="topBar"><a href="menu.html" data-transition="slide" data-direction="reverse"><img class="menuBut"src="images/menu.png"/></a><img class="topbarIcon" src="images/icons/trips.png"/><img class="editBut" src="images/icons/Edit.png"/>
+                                <h2 class="topbarText">Trips</h2>
+                </div>
+            
+            <div id="tripContainer">
+                
+                <div class="tripBox"> <!---Will have to be created in JS each time a new trip is made---->
+
+                    <img id="tripImg" src="http://cache-graphicslib.viator.com/graphicslib/thumbs75/3665/SITours/bali-lembongan-island-beach-club-day-trip-in-bali-145367.jpg"/>
+                    
+                        <h4 id="tripTitle">Bali</h4> <!---Title of Trip--->
+                        <p id="tripDate">06/22/2017</p> <!---Date of Trip--->
+                        <p id="tripNum">4<img src="images/icons/friends.png" id="tripNumIcon"/></p><!---Number of people in Trip--->
+                        <img id="tripArrow" src="images/forwardArrow.png">
+                    
+                    
+                    
+                </div>
+            
+            </div>
+            <div id="newTripContainer"> <!---This way we can append new trips as child elements of "tripContainer" and they will append before the "Add a trip" button-->
+                <div id="newTrip">
+                    <img id="addTripBut" src="images/icons/add.png"/>
+                </div>
+            </div>
+
+
+          </div>
+
+
+    </body>
+
+
+</html>

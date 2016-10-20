@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <link  href="css/redpinstyle.css" rel="stylesheet" type="text/css"/>
+    <link  href="css/redpin_menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="menuContainer">
+            <!-----TOPBAR ---->
+            
+             <div class="topBar"><a href="menu.html" data-transition="slide" data-direction="reverse"><img class="menuBut"src="images/menu.png"/></a>
+						</div>
+            <!---<div class="topBar"><a href="menu.html" data-transition="slide" data-direction="reverse"><img class="menuBut"src="images/menu.png"/></a>
+						</div>-->
+            
+    <!----SEARCH & PROFILE SECTION------>
+            
+            <div id="menu_search"> <!----Will be the User's profile background? --->
+                
+                <!---SEARCHBAR ---->
+                
+                <label for="search-basic" style="display:none;">Search</label>
+<input type="search" name="search" id="search-basic" value="" placeholder="   Search..." />
+                
+                
+                <!---Will be the User's profile IMG & Name------>
+                <h4 id="menuUser">RedPin User</h4>
+                <img id="menuImg" src="https://dummyimage.com/100X100/ff0051/fff.png" />
+                <a href="profile.html"><p>View your profile</p></a>
+                
+            </div>
+            
+    <!-----MENU ITEMS-------->
+            
+            <a href="map.html"><div id="menu_map"><div class="menuBar"><img src="images/icons/map.png" class="menuIcon"/><h4 class="menuItem">Maps</h4></div></div></a>
+            
+            <a href=""><div id="menu_pins"><div class="menuBar"><img src="images/icons/pins.png" class="menuIcon"/><h4 class="menuItem">Pins</h4></div></div></a>
+            
+            <a href=""><div id="menu_profile"><div class="menuBar"><img src="images/icons/friends.png" class="menuIcon"/><h4 class="menuItem">Friends</h4></div></div></a>
+            
+            <a href=""><div id="menu_trips"><div class="menuBar"><img src="images/icons/trips.png" class="menuIcon"/><h4 class="menuItem">Trips</h4></div></div></a>
+            
+            <a href=""><div id="menu_settings"><div class="menuBar"><img src="images/icons/settings.png" class="menuIcon"/><h4 class="menuItem">Settings</h4></div></div></a>
+            
+            <a href=""><div id="menu_FAQ"><div class="menuBar"><img src="images/icons/FAQ.png" class="menuIcon"/><h4 class="menuItem">FAQs</h4></div></div></a>
+        
+            <a href="login.html"><div id="menu_logout"><div class="menuBar"><img src="images/icons/trips.png" class="menuIcon"/><h4 class="menuItem">Logout</h4></div></div></a>
+            
+        </div>
+  
+        <!---<script src="js/redpinFB.js"></script>--->
+
+    </body>
+    	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/RedPin_menuJS.js"></script>
+    
+</html>
