@@ -1,0 +1,80 @@
+#tripContainer{
+    width: 90%;
+    height: auto;
+    margin:20% 5% 0% 5%;
+}
+
+/** Will have to create and append these in JS but still can use this style**/
+
+.tripBox{
+    padding: 4%;
+    width: 80%;
+    background-color: rgba(255,255,255, 0.25);
+    border-radius: 15px;
+    margin: 2.5% 2.5% 2.5% 6%;
+    color: #fff;
+
+}
+
+#tripImg{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 
+    
+}
+
+#tripTitle{
+    font-size: 20px;
+    margin: -18% 0% 0% 25%;
+    position: fixed;
+    
+}
+
+#tripDate{
+    font-size: 12px;
+    margin: -7% 0% 0% 25%;
+    position: fixed;
+}
+
+#tripNum{
+  font-size: 12px;
+    margin: -7% 0% 0% 47%;
+    position: fixed;  
+}
+
+#tripNumIcon{
+    width: 15px;
+    margin: 0% 0% 0% 1%;
+    position: fixed;
+}
+
+#tripArrow{
+    height: 25px;
+    margin: 6% 3% 0% 48%;
+    position: fixed; 
+}
+
+
+/****** NEW TRIP **********/
+#newTripContainer{
+    width: 90%;
+    height: auto;
+    margin:2.5% 5% 0% 5%;
+}
+
+#newTrip{
+    height: 10%;
+    padding: 4%;
+    width: 80%;
+    background-color: rgba(255,255,255, 0.25);
+    border-radius: 15px;
+    margin: 2.5% 2.5% 2.5% 6%;
+    color: #fff;
+}
+
+
+#addTripBut {
+    height: 25px;
+    margin: 6% 0% 6% 45%;
+}

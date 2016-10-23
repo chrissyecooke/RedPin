@@ -1,0 +1,375 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa: 300, 400';
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 750px) and (min-device-height: 300px) and (max-device-height: 750px) {
+
+    body {
+        width: 100%;
+        font-size: 25px;
+        height: auto;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+
+
+    }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+
+      }
+
+    h2{
+     font-size: 25px;
+    }
+
+    p {
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+
+    }
+
+    .fullGradient {
+        background: -webkit-linear-gradient(#013072, #ed194e);
+        background: -o-linear-gradient(#013072, #ed194e); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#013072, #ed194e); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#013072, #ed194e);
+        background-repeat: no-repeat;
+        position: fixed;
+
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .halfGradient {
+        background: -webkit-linear-gradient(#013072, #82235e);
+        background: -o-linear-gradient(#013072, #82235e); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#013072, #82235e); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#013072, #82235e);
+        background-repeat: no-repeat;
+        position: fixed;
+
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+     /*** MENU *****/
+
+
+    #inputContainer {
+        width: 90%;
+        height: auto;
+        margin: 70% 0 0 12%;
+        position: fixed;
+    }
+
+    button  {
+        width: 80%;
+        padding: 3%;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 300;
+        margin: 5% 1% 1% 1%;
+        text-align: center;
+    }
+
+     #fbLogin{
+        background-color: #3b5998;
+        color:#fff;
+    }
+    #fbRegister{
+        background-color: #3b5998;
+        color:#fff;
+        border: 0;
+    }
+
+    #pwHelp {
+        position: relative;
+        margin: 5% 20% 0% 0%;
+    }
+
+
+    .pinButton{
+        height: 75px;
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        z-index: 98;
+    }
+    input {
+        width: 75%;
+        padding: 3%;
+        border: 1.5px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 1% 1% 1% 1%;/**top right bottom left**/
+
+    }
+ 	textarea{
+	  	width: 75%;
+        padding: 2%;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 1% 1% 1% 5%;/**top right bottom left**/
+ 	}
+
+
+    /********** Profile ***********/
+
+      #coverprofile {
+        width:100%;
+        height: 20%;
+        top: 0;
+        position: fixed;
+      }
+
+    #profilepic{
+      border: 5px solid rgba(237, 25, 78, .25);
+      border-radius: 50%;
+      top: 0;
+      margin: 37% 20% 0% 35%;
+      position: fixed;
+      z-index: 99;
+
+    }
+
+    #profiledesc {
+        margin: 70% 5% 0% 5%;
+        width: 90%;
+        height: auto;
+
+    }
+    #profilename {
+      text-align: center;
+      color: #fff;
+      font-size: 15px;
+
+    }
+
+    .profilebuts{
+      width: 40%;
+      padding: 1.5%;
+      font-size: 15px;
+      margin-left: 6%;
+      margin-top: 1%;
+      border: 1.5px solid #fff;
+
+    }
+
+    #profilepins {
+		width: 90%;
+        margin:5% 0% 0% 5% ;
+        background-color: rgba(255,255,255, 0.25);
+        padding: 10%;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .propintable{
+        padding: 1% 6% 1% 6%;
+        font-size: 12px;
+    }
+
+    #profilebio {
+      height: 10%;
+      padding:2% 8% 2% 8%;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .editBut {
+        width: 40px;
+        float: right;
+        margin: 2% 10% 0% 0%;
+    }
+
+    /********** MAP ***********/
+
+
+    /* Placeholder text styling */
+    ::-webkit-input-placeholder { /* Changing style of input placeholer text
+    color:    #fff;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:    #fff;
+           opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:    #fff;
+           opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color:    #fff;
+        }
+
+    .logo {
+        position: fixed;
+        left: 30%;
+        top: 10%;
+        height: 150px;
+    }
+
+    .topBar {
+        top: 0;
+        width: 100vw;
+        height: 3.6%;
+        position: fixed;
+        background-color: #013072;
+        color: #fff;
+        padding: 20px;;
+        z-index: 100;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+
+    .menuBut{
+        height: 17px;
+        position: fixed;
+        margin: 1% 0% 0% 0%;
+    }
+
+    .topbarText{
+        top:0;
+        margin: 4.5% 0% 0% 35%;
+        position: fixed;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+
+    .topbarIcon{
+        height: 20px;
+        top: 10;
+        margin: 1% 0% 0% 25%; /*top right bottom left */
+        position: fixed;
+    }
+}
+
+@media only screen and (min-device-width : 750px) and (max-device-width : 2500px) and (min-device-height: 750px) and (max-device-height: 1200px){
+
+    body {
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+        font-family: 'Lato', sans-serif;
+
+
+    }
+
+      h1, h2, h3, h4, h5, h6 {
+       font-family: 'Lato', sans-serif;
+
+      }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+
+    }
+
+    .fullGradient {
+        background: -webkit-linear-gradient(#013072, #ed194e);
+        background: -o-linear-gradient(#013072, #ed194e); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#013072, #ed194e); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#013072, #ed194e);
+        background-repeat: no-repeat;
+        position: fixed;
+
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #inputContainer {
+        width: auto;
+        height: auto;
+        margin: 75% 0 0 15%;
+        position: fixed;
+    }
+
+    button {
+        width: 80%;
+        padding: 26px;
+        border: 4px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+         font-family: 'Lato', sans-serif;
+        margin: 1% 1% 1% 1%;
+        text-align: center;
+    }
+
+
+
+    input {
+        width: 80%;
+        padding: 26px;
+        border: 4px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        margin: 1% 1% 1% 1%;/**top right bottom left**/
+
+    }
+
+    /********** MAP ***********/
+    #pinMap{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+
+    /* Placeholder text styling */
+    ::-webkit-input-placeholder { /* Changing style of input placeholer text
+    color:    #fff;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:    #fff;
+           opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:    #fff;
+           opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color:    #fff;
+        }
+
+    .logo {
+        position: fixed;
+        left: 30%;
+        top: 10%;
+
+    }
+}

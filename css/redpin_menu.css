@@ -1,0 +1,112 @@
+    .menuContainer{
+        width:100vw;
+        height: 100vh;
+        color: #fff;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 300;
+        top: 0;
+        left:0;
+        position: fixed;
+
+    }
+
+/****** USER INFO ********/
+    #menuImg{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+       margin: 2% 0% 0% 5%;
+    }
+
+    #menuUser {
+        font-size: 20px;
+        margin: 9% 0% 0% 35%;
+        position: fixed;
+    }
+
+    .menuItem{
+        float: right;
+        margin: 0% 0% 0% 20%;
+        position: fixed;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+
+    .menuIcon{
+        position: fixed;
+        height: 30px;
+        margin: 0% 3% 0% 0%;
+    }
+
+    .menuBar {
+
+        margin: 5% 0% 0% 10%;
+        position: fixed;
+        height:auto;
+    }
+
+    #menu_search{
+        width: 100%;
+        height: 37%;
+        background-color: #013072;
+    }
+
+ #search-basic {
+        width: 90%;
+        padding: 2%;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 18% 1% 1% 5%;/**top right bottom left**/
+        background-image: url(search.png);
+        background-repeat: no-repeat;
+        background-position: 95%;
+        background-size: 20px;
+
+    }
+
+    #menu_map{
+        width: 100%;
+        height: 9%;
+        background-color:#1f2d6d;
+    }
+
+    #menu_pins{
+        width: 100%;
+        height: 9%;
+        background-color:#3e2a68;
+    }
+
+    #menu_profile{
+        width: 100%;
+        height: 9%;
+        background-color:#602663;
+    }
+
+    #menu_trips{
+        width: 100%;
+        height: 9%;
+        background-color:#82235e;
+    }
+
+    #menu_settings{
+        width: 100%;
+        height: 9%;
+        background-color:#a52059;
+    }
+
+    #menu_FAQ{
+        width: 100%;
+        height: 9%;
+        background-color:#c91d53;
+    }
+
+    #menu_logout{
+        width: 100%;
+        height: 9%;
+        background-color:#ed194e;
+    }

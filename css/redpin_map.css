@@ -1,0 +1,95 @@
+    body{
+        margin: 0;
+}
+.container{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+
+    #pinMap{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #addPin{
+        width: 100vw;
+        position: fixed;
+        z-index: 101;
+        background-color: #013072;
+        visibility: hidden;
+        text-align: center;
+    }
+    #closePinDiv{
+        right: 10px;
+        width: 100%;
+        height: 2%;
+        text-align: right;
+        background-color: #013072;
+
+    }
+    #closePinBut{
+        width: 10%;
+        color: white;
+        background-color: #013072;
+        border: none;
+        padding: 0;
+    }
+
+    #addPinBut{
+        font-size: 20px;
+
+    }
+	
+	
+	#searchTextField{
+		padding: 10px;
+		background-color: #013072;
+		color: white;
+		font-family: 'Lato', sans-serif;
+	}
+	
+	#comment{
+		padding: 10px;
+		background-color: #013072;
+		color: white;
+		font-family: 'Lato', sans-serif;
+	}
+     
+	/*
+#searchTextField{ 
+        width: 75%;s
+        padding: 3%;
+        border: 1.5px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 1% 1% 1% 1%;
+	}
+	
+	#comment{
+        width: 75%;
+        padding: 3%;
+        border: 1.5px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 1% 1% 1% 1%;
+}*/
+	
+
+ input:focus::-webkit-input-placeholder 
+    {
+        color: transparent;
+    }
