@@ -8,7 +8,9 @@
         top: 0;
         left: 0;
         }
-
+label{
+    font-size: 15px;
+}
     #pinMap{
         width: 100vw;
         height: 100vh;
@@ -16,9 +18,10 @@
         top: 0;
         left: 0;
     }
-
+ 
     #addPin{
         width: 100vw;
+        top: 8%;
         position: fixed;
         z-index: 101;
         background-color: #013072;
@@ -40,56 +43,198 @@
         border: none;
         padding: 0;
     }
+	#searchTextField{
+        width: 80%;
+        padding: 2%;
+        border-bottom: 1.5px solid #fff;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 3% 1% 1% 1%;/**top right bottom left**/
+        background-image: url(search.png);
+        background-repeat: no-repeat;
+        background-position: 95%;
+        background-size: 20px;
+	}
 
     #addPinBut{
-        font-size: 20px;
-
+        margin: 3% 0% 3% 0%;
+        width: 85%;
     }
-	
-	
-	#searchTextField{
-		padding: 10px;
-		background-color: #013072;
-		color: white;
-		font-family: 'Lato', sans-serif;
-	}
-	
-	#comment{
-		padding: 10px;
-		background-color: #013072;
-		color: white;
-		font-family: 'Lato', sans-serif;
-	}
-     
-	/*
-#searchTextField{ 
-        width: 75%;s
-        padding: 3%;
-        border: 1.5px solid #fff;
-        border-radius: 50px;
-        background-color: transparent;
-        color: #fff;
-        font-size: 12px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        margin: 1% 1% 1% 1%;
-	}
-	
-	#comment{
-        width: 75%;
-        padding: 3%;
-        border: 1.5px solid #fff;
-        border-radius: 50px;
-        background-color: transparent;
-        color: #fff;
-        font-size: 12px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        margin: 1% 1% 1% 1%;
-}*/
-	
 
- input:focus::-webkit-input-placeholder 
+
+ input:focus::-webkit-input-placeholder
     {
         color: transparent;
     }
+
+/**** Add Pin Inputs****/
+#addpincontainer {
+	width: 100vw;
+	height: 100vh;
+	padding: 5%;
+	position: fixed;
+	display: none;
+	z-index: 101;
+    overflow: auto;
+}
+#placename {
+	color: #fff;
+    top: 0;
+    margin: 5% 0% 5% 0%;
+    font-size: 20px;
+}
+#commentDiv, #tripDiv{
+	/**display: none;*/
+	text-align: left;
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+
+#commentDiv {
+  display: none;
+}
+
+#tripDiv {
+  margin-bottom: 100px;
+    display: none;
+}
+#priorityDiv{
+        margin-bottom: 20px;
+    padding-top:20px;
+    height: 140px;
+    margin-right: 0%;
+}
+
+#tagDiv{
+	text-align: left;
+    margin-bottom: 200px !important;
+    display: none;
+    margin-top: -62px;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	background-color: transparent;
+	color: #fff;
+
+}
+
+li {
+	float: left;
+	margin: 2%;
+}
+
+#addMarker {
+	margin: 2% 5% 2% 5%;
+	bottom: 10px;
+	left: 5%;
+	position: fixed;
+}
+#comment{
+    margin-top: 5%;
+	padding: 18px;
+    background-color: transparent;
+	color: white;
+	font-family: 'Lato', sans-serif;
+    resize: none;
+    border-width: 1.5px;
+    font-size: 12px;
+    border-radius: 5px;
+
+}
+
+textarea{
+	  	width: 80%;
+        padding: 2%;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 2% 1% 1% -0.2%;/**top right bottom left**/
+ 	}
+
+.addPinBreak {
+    width: 100%;
+    left: 0;
+    margin: 0% 0% 5% 0%;
+    position: fixed;
+}
+
+#addtoMap {
+    height: 50px;
+    background-color: #fff;
+    color: #ed194e;
+    margin: 18.5% 0% 300px 0%;
+    width: 72%;
+    position: fixed;
+    /*display: block; Do this at the last stop */
+    bottom: -213px;
+    right: 47px;
+    display: none;
+
+}
+
+#closePinWindow{
+    border: 0px;
+    padding: 0px;
+    width: 10%;
+    right: 0px;
+    position: fixed;
+    margin: 0% 0% 0% 0%;
+}
+label {
+    color: #fff;
+    margin-top: 10px;
+}
+/*.halfGradient {
+    min-height: 0;
+}*/
+
+    #prioritypins{
+      margin-top: 14px;
+      height: 90.5%;
+    }
+
+
+
+
+.priorityList {
+    padding: 0% 14% 0% 14% !Important;
+    text-align: center;
+    margin-left: 14px;
+}
+
+.textBlock {
+  font-size: 16px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 12%;
+}
+
+.textMeh {
+  margin-left: 8%;
+  margin-right: 13%;
+}
+
+.textSure {
+    margin-right: 13%;
+}
+/* Add stroke to the pins onclick*/
+.clickpins {
+    stroke: rgb(209, 209, 209);
+  stroke-width: 1;
+  height: 50px;
+}

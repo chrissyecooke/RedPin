@@ -1,23 +1,9 @@
-$(document).ready(function(){
-    var menuBut = $("#menuBut");
-    var menu = $("#menu");
-    
-    var click = 0;
-    $("#menuBut").on("click", function(event){
-        
-        click ++;
-       switch(click){
-           case 1: $("#menu").show();
-           break;
-               
-           case 2: //close menu
-            click = 0;
-               $("#menu").hide();
-               break;
-       }
-    });
-    
-    
-});
 
+function hideNavbar() // needed for Android browser pushing up keyboard
+{ 
+    if (screen.height <= 550) // mobile
+    {
+        document.getElementById('loadmenu').style.zIndex = "-1";
+    }
+};
 

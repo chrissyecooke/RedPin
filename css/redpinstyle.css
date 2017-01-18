@@ -1,27 +1,30 @@
+/*********************************************  FONTS  *********************************************/
+
 @import 'https://fonts.googleapis.com/css?family=Comfortaa: 300, 400';
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
 
 
-@media only screen and (min-device-width : 300px) and (max-device-width : 750px) and (min-device-height: 300px) and (max-device-height: 750px) {
+/*@media only screen and (min-device-width : 300px) and (max-device-width : 750px) and (min-device-height: 300px) and (max-device-height: 750px) {*/
 
+
+
+/*********************************************PSEUDOS*********************************************/
     body {
-        width: 100%;
+        width: 100vw;
         font-size: 25px;
         height: auto;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-
-
+        overflow: scroll;
     }
 
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-
       }
 
-    h2{
-     font-size: 25px;
+    h2 {
+        font-size: 25px;
     }
 
     p {
@@ -34,8 +37,42 @@
         color: #fff;
         font-family: 'Lato', sans-serif;
         text-align: center;
-
     }
+    
+    hr{
+        border: 0;
+        height: 1px;
+        width: 100%;
+        position: fixed;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(165, 31, 89, 1), rgba(0, 0, 0, 0));
+    }
+    
+
+	label {
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+	}
+
+    /* Placeholder text styling */
+    ::-webkit-input-placeholder { /* Changing style of input placeholer text
+    color:    #fff;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:    #fff;
+           opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:    #fff;
+           opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color:    #fff;
+        }
+
+
+
+/******-----------------------------------CONTAINERS -----------------**************************/
 
     .fullGradient {
         background: -webkit-linear-gradient(#013072, #ed194e);
@@ -45,12 +82,13 @@
         background-repeat: no-repeat;
         position: fixed;
 
-        height: 100%;
-        width: 100%;
+        min-height: 100vh;
+        width: 100vw;
         top: 0;
         left: 0;
+        flex-shrink: 1;
     }
-    
+
     .halfGradient {
         background: -webkit-linear-gradient(#013072, #82235e);
         background: -o-linear-gradient(#013072, #82235e); /* For Opera 11.1 to 12.0 */
@@ -58,36 +96,31 @@
         background: linear-gradient(#013072, #82235e);
         background-repeat: no-repeat;
         position: fixed;
-
-        height: 100%;
-        width: 100%;
+        min-height: 100vh;
+        width: 100vw;
         top: 0;
         left: 0;
+        flex-shrink: 1;
     }
 
-     /*** MENU *****/
 
 
-    #inputContainer {
-        width: 90%;
-        height: auto;
-        margin: 70% 0 0 12%;
-        position: fixed;
-    }
 
-    button  {
-        width: 80%;
-        padding: 3%;
-        border: 2px solid #fff;
-        border-radius: 50px;
-        background-color: transparent;
-        color: #fff;
-        font-size: 15px;
-        font-family: 'Comfortaa', cursive;
-        font-weight: 300;
-        margin: 5% 1% 1% 1%;
-        text-align: center;
-    }
+/*********************************************** BUTTONS **********************************************/
+
+        button  {
+                width: 80%;
+                padding: 3%;
+                border: 1.5px solid #fff;
+                border-radius: 50px;
+                background-color: transparent;
+                color: #fff;
+                font-size: 15px;
+                font-family: 'Comfortaa', cursive;
+                font-weight: 300;
+                margin: 5% 1% 1% 1%;
+                text-align: center;
+            }
 
      #fbLogin{
         background-color: #3b5998;
@@ -97,6 +130,7 @@
         background-color: #3b5998;
         color:#fff;
         border: 0;
+        font-size: 12px;
     }
 
     #pwHelp {
@@ -107,10 +141,11 @@
 
     .pinButton{
         height: 75px;
-        bottom: 10px;
+        bottom: 70px;
         right: 10px;
         position: absolute;
         z-index: 98;
+
     }
     input {
         width: 75%;
@@ -125,119 +160,79 @@
         margin: 1% 1% 1% 1%;/**top right bottom left**/
 
     }
- 	textarea{
-	  	width: 75%;
-        padding: 2%;
-        border: 2px solid #fff;
-        border-radius: 50px;
+    /****When input register fields are filled in properly***/
+    #registerForm{
+          margin-top: 0%;  
+        }
+    .registerInputs{
+        width: 75%;
+        padding: 3%;
+        border: 0px;
+        border-bottom: 1.5px solid #fff;
+        border-radius: 0px;
         background-color: transparent;
         color: #fff;
-        font-size: 15px;
+        font-size: 12px;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        margin: 1% 1% 1% 5%;/**top right bottom left**/
- 	}
-
-
-    /********** Profile ***********/
-
-      #coverprofile {
-        width:100%;
-        height: 20%;
-        top: 0;
-        position: fixed;
-      }
-
-    #profilepic{
-      border: 5px solid rgba(237, 25, 78, .25);
-      border-radius: 50%;
-      top: 0;
-      margin: 37% 20% 0% 35%;
-      position: fixed;
-      z-index: 99;
+        margin: 1% 1% 1% 1%;
 
     }
 
-    #profiledesc {
-        margin: 70% 5% 0% 5%;
-        width: 90%;
-        height: auto;
-
-    }
-    #profilename {
-      text-align: center;
-      color: #fff;
-      font-size: 15px;
-
+     #regName{
+         
+          transition-duration: 1s;
+          background-image: url(right.png);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          background-size: 0px;
     }
 
-    .profilebuts{
-      width: 40%;
-      padding: 1.5%;
-      font-size: 15px;
-      margin-left: 6%;
-      margin-top: 1%;
-      border: 1.5px solid #fff;
-
+    #regUser{
+          transition-duration: 1s;
+          background-image: url(right.png);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          background-size: 0px;   
     }
 
-    #profilepins {
-		width: 90%;
-        margin:5% 0% 0% 5% ;
-        background-color: rgba(255,255,255, 0.25);
-        padding: 10%;
-        border-radius: 20px;
+    #regEmail{
+          background-image: url(right.png);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          background-size: 0px;
+    }  
+
+    #regPass{
+          transition-duration: 1s;
+          background-image: url(right.png);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          background-size: 0px; 
+    }   
+
+    #regReEnter{
+          transition-duration: 1s;
+          background-image: url(right.png);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          background-size: 0px;
+          margin-bottom: 5%;
+    }
+
+    #have_account_link{
+
         color: #fff;
+        margin: 7% 20% 0% 0%;
     }
 
-    .propintable{
-        padding: 1% 6% 1% 6%;
-        font-size: 12px;
-    }
 
-    #profilebio {
-      height: 10%;
-      padding:2% 8% 2% 8%;
-      font-size: 12px;
-      color: #fff;
-    }
+/*********************************************** TOP BAR **********************************************/
 
-    .editBut {
-        width: 40px;
-        float: right;
-        margin: 2% 10% 0% 0%;
-    }
-
-    /********** MAP ***********/
-
-
-    /* Placeholder text styling */
-    ::-webkit-input-placeholder { /* Changing style of input placeholer text
-    color:    #fff;
-        }
-        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-           color:    #fff;
-           opacity:  1;
-        }
-        ::-moz-placeholder { /* Mozilla Firefox 19+ */
-           color:    #fff;
-           opacity:  1;
-        }
-        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-           color:    #fff;
-        }
-
-    .logo {
-        position: fixed;
-        left: 30%;
-        top: 10%;
-        height: 150px;
-    }
-
-    .topBar {
+.topBar {
         top: 0;
         width: 100vw;
-        height: 3.6%;
+        height: 2%;
         position: fixed;
         background-color: #013072;
         color: #fff;
@@ -245,6 +240,7 @@
         z-index: 100;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
+    z-index: 150;
     }
 
     .menuBut{
@@ -255,7 +251,7 @@
 
     .topbarText{
         top:0;
-        margin: 4.5% 0% 0% 35%;
+        margin: 3% 0% 0% 38%;
         position: fixed;
         font-size: 25px;
         font-family: 'Lato', sans-serif;
@@ -264,112 +260,338 @@
 
     .topbarIcon{
         height: 20px;
-        top: 10;
-        margin: 1% 0% 0% 25%; /*top right bottom left */
+        top: 16px;
+        margin: 0% 0% 0% 30%; /*top right bottom left */
         position: fixed;
     }
-}
 
-@media only screen and (min-device-width : 750px) and (max-device-width : 2500px) and (min-device-height: 750px) and (max-device-height: 1200px){
+/*********************************************** MENU **********************************************/
 
-    body {
-        width: 100%;
-        font-size: 20px;
-        height: auto;
-        font-family: 'Lato', sans-serif;
-
-
-    }
-
-      h1, h2, h3, h4, h5, h6 {
+     .loadmenu {
+       bottom: 0;
+       left: 0;
+       width: 100vw;
+       height: 9%;
+       position: fixed;
+       background-color: #013072;
+       color: #fff;
        font-family: 'Lato', sans-serif;
+       font-weight: 300;
+       z-index: 150;
 
-      }
+     }
 
-    a {
-        text-decoration: none;
-        color: #fff;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-
-    }
-
-    .fullGradient {
-        background: -webkit-linear-gradient(#013072, #ed194e);
-        background: -o-linear-gradient(#013072, #ed194e); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#013072, #ed194e); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#013072, #ed194e);
-        background-repeat: no-repeat;
-        position: fixed;
-
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
 
     #inputContainer {
-        width: auto;
+        width: 90%;
         height: auto;
-        margin: 75% 0 0 15%;
+        margin: 65% 0 0 12%;
         position: fixed;
     }
 
-    button {
-        width: 80%;
-        padding: 26px;
-        border: 4px solid #fff;
-        border-radius: 50px;
+	textarea{
+	  	width: 80%;
+        padding: 2%;
+        border: 2px solid #fff;
+        border-radius: 20px;
         background-color: transparent;
         color: #fff;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin: 1% 1% 1% 1%;/**top right bottom left*/
+ 	}
+
+
+
+/******************************************* PROFILE ***************************************************/
+table{
+ border-collapse: collapse;   
+}
+      #coverprofile {
+        width:100%;
+        height: 20%;
+        top: 0;
+        position: fixed;
+        z-index: 100;
+      }
+
+    
+    #profilePicDiv{
+          box-shadow: 1px 1px 10px #000;
+          border-radius: 50%;
+          top: 0;
+          margin: 45% 20% 0% 35%;
+          position: fixed;
+          z-index: 99;
+          width: 100px;
+          height: 100px;
+            background-image: url("http://i.ndtvimg.com/i/2014-12/smile_100x100_71419330765.jpg");
+        background-size: 100px;
+        }
+
+
+    #profiledesc {
+        margin: 80% 5% 0% 5%;
+        width: 90%;
+        height: auto;
+
+    }
+    #profilename {
+         height: auto;
+        width: 80%;
+        padding:2% 0% 2% 0%;
         font-size: 20px;
-         font-family: 'Lato', sans-serif;
-        margin: 1% 1% 1% 1%;
+        color: #fff;
+        z-index: 120;
+        position: fixed;
+        top:0;
+        margin: 20% 10% 0% 10%;
+        text-align: center; 
+        font-weight: 400;
+    
+    }
+#profileIcons{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    top:0;
+    margin: 70% 0% 0% 0%;
+    font-size: 15px;
+}
+
+    .profilebuts{
+          width: 40%;
+          padding: 1.5%;
+          font-size: 15px;
+          margin-left: 6%;
+          margin-top: 1%;
+          border: 1.5px solid #fff;
+    }
+
+/******************************* DATABASE PINS********************************/
+     #profilePinsTable{
+        width: 100%;
+        padding: 5% 5% 5% 5%;
+        color: #fff;
+        left:0;
+        background-color: rgba(255,255,255, 1);
+         
+     }
+
+/**********Just color underlay in the pin div
+    #pinTableUnderLay{ 
+        width: 100%;
+        background-color: rgba(255,255,255, 0.5);
+        height: 100%;
+        position:fixed;
+        left:0;
+        
+    }********************/
+    #profilepins {
+		width: 100%;
+        height: 40%;
+        margin:90% 0% 0% 0% ;
+        padding: 0% 5% 5% 0%;
+        color: #fff;
+        position:fixed;
+        left:0;
+        top: 0;
+        z-index:90;
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+
+    .profilePinsHead{
+        /*background-color: #fff;*/
+        background: -webkit-linear-gradient(#a52059, #002E74);
+        background: -o-linear-gradient(#a52059, #002E74); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#a52059, #002E74); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#a52059, #002E74);
+        background-repeat: no-repeat;
+        font-weight: 300;
+        padding-bottom: 5%;
+        box-shadow: 3px 3px 5px #002E74;
+        border: 0px;
+        
+    }
+
+    .pinTableTitles{
+        color: #fff;
+        font-size: 12px; 
+        padding-left:0%;
+        padding-top :2%;
+        padding-bottom: 4%;
+        align-content: center;
+        vertical-align:text-top;
+    }
+   
+
+    #pinTitlesImg{
+        width: 15px;
+        margin: 5% 8% 0% 10%;
+    }
+
+    .propintable{
+        font-size: 12px;
+        color: #013072 ;
+        padding: 5% 6% 5% 6%;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(165, 31, 89, 1);
         text-align: center;
     }
 
 
 
-    input {
+    #profilebio {
+        height: 10%;
         width: 80%;
-        padding: 26px;
-        border: 4px solid #fff;
-        border-radius: 50px;
-        background-color: transparent;
+        padding:5% 0% 2% 0%;
+        font-size: 12px;
         color: #fff;
-        font-size: 20px;
-        font-family: 'Lato', sans-serif;
-        margin: 1% 1% 1% 1%;/**top right bottom left**/
+        z-index: 180;
+        position: fixed;
+        top:0;
+        margin: 25% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .editBut{
+          width: 30px;
+          float: right;
+          margin: 1% 10% 0% 0%;
+      }
+
+
+    #profileImgDiv{
+        width: 100%;
+        margin: 10% 0% 0% 0%;
+        padding: 5%;
+    }
+
+    #profileImgChange{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-size: 150%;
+        background-repeat:no-repeat;
+        background-position: center;
+        
 
     }
 
-    /********** MAP ***********/
+#imgInput{
+    margin: 10% 0% 0% 30%;
+    width:50%;
+    border-top:  0px;
+    border-left:  0px;
+    border-right:  0px;
+    border-radius: 0px;
+    position: fixed;
+    }
+
+#imgBut{
+    margin-left: 5%;
+}
+
+      #closePinWindow {
+      width: 10%;
+      color: white;
+      border: none;
+      margin: -3% 7% 0% 0%;
+      float: right;
+      display: none;
+  }
+      .logo {
+          position: fixed;
+          left: 30%;
+          right: 30%;
+          top: 10%;
+          width: 40%;
+      }
+
+      #profileBody {
+      display: block;
+      }
+
+/********************************************* MAP **************************************/
     #pinMap{
         width: 100vw;
         height: 100vh;
         position: fixed;
     }
 
-    /* Placeholder text styling */
-    ::-webkit-input-placeholder { /* Changing style of input placeholer text
-    color:    #fff;
-        }
-        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-           color:    #fff;
-           opacity:  1;
-        }
-        ::-moz-placeholder { /* Mozilla Firefox 19+ */
-           color:    #fff;
-           opacity:  1;
-        }
-        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-           color:    #fff;
+}
+
+/***************************************** 404 Error********************************************/
+      .errorbox {
+            color: #fff;
+            margin-top: 70%;
+            display: block;
+            text-align: center;
         }
 
-    .logo {
-        position: fixed;
-        left: 30%;
-        top: 10%;
 
+/***************************************** Trip buttons********************************************/
+
+  #tripDiv {
+    padding-bottom: 10px;
+    height:auto%;
+  }
+
+  #tagDiv {
+    padding-bottom: 10px;
+    height:auto%;
+  }
+
+    .eTrip {
+      padding: 2% 7% 2% 7%;
+      border-radius: 20px;
     }
+
+    .eTrip:active {
+      background-color: #fff;
+      color: #ed194e;
+    }
+
+    .eTag {
+      padding: 2% 7% 2% 7%;
+      border-radius: 50px;
+      border: 0px;
+    }
+
+    .eTag:active {
+      background-color: #fff;
+      color: #ed194e;
+    }
+
+  #addTag {
+    padding: 2% 5% 2% 5%;
+    width: 10%;
+    border: 0px;
+  }
+
+  #newTag {
+    padding: 2.5% 7% 2.5% 7%;
+    width: 20%;
+    border: 0px;
+    border-radius: 10px;
+  }
+
+/***************************************** Bio********************************************/
+ #bioText {
+     width: 85%;
+    margin: 17% 7.5% 0% 5.5%;
+     border-radius: 10px;
+ }
+
+ #editBioBut {
+  margin-left: 9%;
+  margin-left: 9%;
+ }
+
+.logoutNotification{
+    z-index: 250;
 }

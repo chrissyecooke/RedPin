@@ -1,0 +1,21 @@
+#welcomeNotification{
+    width: 95%;
+    margin: 50% 2.5% 0% 2.5%;
+    z-index: 200;   
+    position: fixed;
+    visibility: hidden;
+}
+
+#tripNotification{
+    width: 95%;
+    margin: 50% 2.5% 0% 2.5%;
+    z-index: 200;   
+    position: fixed;
+}
+
+#pinNotification{
+    width: 95%;
+    margin: 50% 2.5% 0% 2.5%;
+    z-index: 200;   
+    position: fixed;
+}

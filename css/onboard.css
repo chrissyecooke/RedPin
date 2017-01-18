@@ -1,0 +1,224 @@
+#newonboardscreen {
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.animatepin{
+  animation: firstslideleft linear 4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: firstslideleft linear 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: firstslideleft linear 4s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: firstslideleft linear 4s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: firstslideleft linear 4s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes firstslideleft{
+  0% {
+    transform:  translate(700px,0px)  ;
+  }
+  38% {
+    transform:  translate(1px,0px)  ;
+  }
+  100% {
+    transform:  translate(1px,0px)  ;
+  }
+}
+
+@-moz-keyframes firstslideleft{
+  0% {
+    -moz-transform:  translate(700px,0px)  ;
+  }
+  38% {
+    -moz-transform:  translate(1px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(1px,0px)  ;
+  }
+}
+
+@-webkit-keyframes firstslideleft {
+  0% {
+    -webkit-transform:  translate(700px,0px)  ;
+  }
+  38% {
+    -webkit-transform:  translate(1px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(1px,0px)  ;
+  }
+}
+
+@-o-keyframes firstslideleft {
+  0% {
+    -o-transform:  translate(700px,0px)  ;
+  }
+  38% {
+    -o-transform:  translate(1px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(1px,0px)  ;
+  }
+}
+
+@-ms-keyframes firstslideleft {
+  0% {
+    -ms-transform:  translate(700px,0px)  ;
+  }
+  38% {
+    -ms-transform:  translate(1px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(1px,0px)  ;
+  }
+}
+
+#logo{
+  animation: logoanimate linear 1.2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: logoanimate linear 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: logoanimate linear 1.2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: logoanimate linear 1.2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: logoanimate linear 1.2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes logoanimate{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  15% {
+    transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    transform:  translate(0px,0px)  ;
+  }
+  75% {
+    transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes logoanimate{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -moz-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -moz-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes logoanimate {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -webkit-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -webkit-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes logoanimate {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -o-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -o-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes logoanimate {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -ms-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -ms-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}

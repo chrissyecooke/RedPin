@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa: 300, 400';
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
 #tripContainer{
     width: 90%;
     height: auto;
@@ -57,6 +60,12 @@
 
 
 /****** NEW TRIP **********/
+#trip1Div{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
 #newTripContainer{
     width: 90%;
     height: auto;
@@ -77,4 +86,260 @@
 #addTripBut {
     height: 25px;
     margin: 6% 0% 6% 45%;
+}
+
+
+/******************DISPLAY BALI TRIPS************/
+#friendDiv{
+    width: 100%;
+    height: 20%;
+    margin: 20% 0% 0% 0%;
+    position: fixed;
+    border-top: #fff solid 1px;
+    padding-top: 2%;
+    color: #fff;
+}
+
+#travelerTitle{
+    font-size: 15px;
+    margin-left: 5%;
+    font-weight: 400;
+    padding-bottom: 2%;
+}
+
+#friendTable{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.tripFriendImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#tableHolder{
+        width: 100%;
+        height: 40%;
+        margin:85% 0% 0% 0% ;
+        padding: 0% 5% 5% 0%;
+        color: #fff;
+        position:fixed;
+        left:0;
+        top: 0;
+        z-index:90;
+        overflow-y: scroll;
+        background-color: #fff;
+        display: none;
+}
+
+#tableHolderHead{
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom: 20%;
+}
+
+.trippintable{
+        font-size: 12px;
+        color: #013072;
+        background-color: #fff;
+        padding: 5% 3% 5% 3%;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(165, 31, 89, 1);
+        overflow: scroll;
+        text-align: center;
+    }
+.commentOverlay{
+    width:80%;
+    height: 20%;
+    background-color: blue;
+    position: fixed;
+    border-radius: 10px;
+    margin: 95% 10% 0% 10%;
+    z-index: 130;
+    display: none;
+}
+
+.tripName{
+    font-size: 25px;
+    margin: 15% 0% 5% 5%;
+    color: #fff;
+}
+
+.tripth{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 4% 4% 4% 4%;    
+        align-content: center;
+        vertical-align:text-top;
+        font-family: 'Lato', sans-serif;
+}
+
+#tripPinsTable{
+        width: 100%;
+        padding: 5% 5% 5% 5%;
+        color: #fff;
+        left:0;
+        background-color: rgba(255,255,255, 1);
+}
+/*.innerTripTable{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    position: absolute;
+    padding: 5% 5% 5% 5%;
+    color: #fff;
+    left:0;
+    background-color: rgba(255,255,255, 1);
+    z-index: 150;
+}*/
+.innerTripDate{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 18% 5% 0% 0%;
+    font-size: 12px;
+    color: #fff;
+}
+
+#calendarIcon{
+    position: fixed;
+    width: 20px;
+    top: 0;
+    right: 0;
+    margin: 17% 25% 0% 0%;
+}
+
+
+/***********NEW TRIP*************/
+/** Page 1 *****/
+#tripFriendContainer{
+    width: 90%;
+    height: auto;
+    margin:20% 5% 0% 5%;
+    color: #fff;
+    
+}
+#tripFriend{
+    padding: 4%;
+    width: 80%;
+    background-color: rgba(255,255,255, 0.25);
+    border-radius: 15px;
+    margin: 2.5% 2.5% 2.5% 6%;
+    color: #fff;
+}
+
+#tripFriendImg{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+#tripFriendName{
+    font-size: 20px;
+    margin: -18% 0% 0% 25%;
+    position: fixed;
+}
+
+#tripFriendStatus{
+        font-size: 15px;
+    margin: -10% 0% 0% 25%;
+    position: fixed;
+}
+
+#tripFriendBreak{
+    width: 80%;
+    margin-left: 10%;
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255, .10);
+    background-image: linear-gradient(to right, rgba(255,255,255, .10), #fff, rgba(255,255,255, .10));
+}
+
+.forwardButton{
+      height: 75px;
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        z-index: 98;
+}
+
+
+/**PAGE 2 ******/'
+
+.tripInfoDiv{
+    width: 100%;
+    height: 30%;
+}
+
+#tripImg{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+#newTripTitle{
+    width: 50%;
+    margin: 0% 0% 0% 5%;
+    position: fixed;
+}
+
+#newTripDate{
+    width: 50%;
+    margin: 15% 0% 0% 5%;
+    position: fixed;
+}
+
+#tripTitleBreak{
+    width: 90%;
+    margin:45% 0% 0% 5%;
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255, .10);
+    background-image: linear-gradient(to right, rgba(255,255,255, .10), #fff, rgba(255,255,255, .10));
+}
+
+#tripComments{
+    height: 10%;
+    width: 65%;
+    position: fixed;
+    border-radius: 15px;
+    margin: 30% 0% 0% -10%;
+
+}
+
+#tripTravellers{
+    font-size: 20px;
+}
+
+#tripTravellerNum{
+    font-size: 20px;
+    margin: -12% 0% 0% 35%;
+    position:fixed;
+}
+
+#tripFriends{
+    width: 95%;
+    height:35%;
+    bottom: 0;
+    left: 0;
+    margin: 0% 0% 5% 2.5%;
+    position: fixed;
+    
+}
+
+#tripFriendIcon-container{
+   width: 75px;
+    height: 75px;
+}
+
+#tripFriendIcon{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }

@@ -1,0 +1,126 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Dec 01, 2016 at 10:06 PM
+-- Server version: 5.6.28
+-- PHP Version: 7.0.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `RedPinRegister`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `marker`
+--
+
+CREATE TABLE `marker` (
+  `ID` int(11) NOT NULL,
+  `markername` varchar(50) NOT NULL,
+  `userid` varchar(100) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `lat` double NOT NULL,
+  `lng` double NOT NULL,
+  `trip` varchar(50) NOT NULL,
+  `tag` varchar(50) NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `date` varchar(50) NOT NULL,
+  `priority` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `marker`
+--
+
+INSERT INTO `marker` (`ID`, `markername`, `userid`, `username`, `lat`, `lng`, `trip`, `tag`, `comment`, `date`, `priority`) VALUES
+(34, 'BCIT Downtown Campus', '27', 'chis', 49.2834511, -123.1152548, '', '', 'downtown campus roks', '', ''),
+(35, 'BCIT', '27', 'chis', 49.25139189999999, -123.0013955, '', 'school', 'pin makrer 2\n', 'Tue Nov 22 2016', ''),
+(40, 'Tofino', '37', 'cookie', 49.1529842, -125.90661840000001, '', 'Beach', 'tofino', 'Tue Nov 22 2016', ''),
+(41, 'Ubud', '27', 'chis', -8.4977259, 115.26301420000004, 'Bali', '', 'ubud ubud bali trip 1', 'Mon Nov 28 2016', ''),
+(42, 'Uluwatu Temple', '27', 'chis', -8.829143199999999, 115.08490689999996, 'Bali', 'Hotel', 'Great temple', 'Mon Nov 28 2016', ''),
+(43, 'Ubud', '21', 'rick', -8.4977259, 115.26301420000004, 'Bali', 'Beach', 'Ubud rick pin1', 'Mon Nov 28 2016', ''),
+(44, 'The Temple Lodge', '21', 'rick', -8.807046, 115.11309299999994, 'Bali', 'Hotel', 'rick pin2', 'Mon Nov 28 2016', ''),
+(54, 'BCIT Downtown Campus', '44', 'Christina Cooke', 49.2834511, -123.1152548, '', '', '', 'Thu Dec 01 2016', 'medium'),
+(55, 'BCIT', '44', 'Christina Cooke', 49.25139189999999, -123.0013955, '', '', '', 'Thu Dec 01 2016', 'low'),
+(56, 'British Columbia Institute of Technology', '44', 'Christina Cooke', 49.2509972, -123.00317180000002, '', '', '', 'Thu Dec 01 2016', 'high');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `facebookid` varchar(200) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `repassword` varchar(50) NOT NULL,
+  `bio` varchar(200) NOT NULL,
+  `fbPic` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `facebookid`, `name`, `email`, `username`, `password`, `repassword`, `bio`, `fbPic`) VALUES
+(21, '', 'rick', 'rick', 'rick', 'rick', 'rick', '', ''),
+(22, '', 'rick', 'gomez', 'escobar', '1000', '1000', '', ''),
+(23, '', 'christinam', 'cooke.cec@', 'christinam', '123', '123', '', ''),
+(24, '', 'test1', 'test1@test', 'test1', 'test', 'test', '', ''),
+(25, '', 'test1', 'test1@test', 'test1', 'test', 'test', '', ''),
+(26, '', 'test', 'test@test', 'test', 'test', 'test', '', ''),
+(27, '', 'chris', 'chris@ch', 'chis', '123', '123', '', ''),
+(28, '', '1', '12@12', '1', '123', '123', '', ''),
+(29, '', 'rick', 'rcike@sdfs', 'rick', '123', '123', '', ''),
+(30, '', 'Christina ', 'cooke.cec@', 'cooke.cec', 'cooke', 'cooke', '', ''),
+(31, '', 'christina', 'cooke.cec@', 'chrissy123', '123', '123', '', ''),
+(32, '', 'cooke', 'cooke@cooke.com', 'cooke', 'cooke', 'cooke', '', ''),
+(33, '', 'cooke', 'cooke@cooke', 'cooke', 'cooke', 'cooke', '', ''),
+(34, '', 'cooek', 'cooke@cooke', 'cooke', 'cooke', 'cooke', '', ''),
+(35, '', 'cooke', '1@cooke', 'cooke1', '123', '123', 'I love this', ''),
+(36, '', 'morgan', 'morgyhuest@gmail.com', 'morg', '123', '123', '', ''),
+(37, '', 'cooke', 'cooke@cooke', 'cookie', '123', '123', '', ''),
+(38, '', '123', '123@222', '123', '123', '123', '', ''),
+(40, '', 'tester', 'test@test', 'test', 'test', 'test', '', ''),
+(44, '10207471764184868', 'Christina Cooke', 'fbtemp@email.com', 'Christina Cooke', 'Christina Cooke', 'Christina Cooke', 'new bio for chris cooke fb', 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/13450077_10206520395201238_6598101333814413602_n.jpg?oh=389c2d7b707a23e37c0049bbf409ecf8&oe=58C4471D');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `marker`
+--
+ALTER TABLE `marker`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `marker`
+--
+ALTER TABLE `marker`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
